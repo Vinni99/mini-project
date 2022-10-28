@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".assests/css.style">
+    <link rel="stylesheet" href=".assests/style.css">
     <title>CSS Snippet Cheatsheet</title>
 </head>
 <body>
@@ -27,25 +27,63 @@
 
 <section>
   <h1>Flexbox Column</h1>
-  <p>Use this to create Flexbox column layout</p>
+  <p>Use this to create Flexbox column layout.</p>
    <pre><code>
     .column {
         display: flex;
         flex-direction: column
     }
    </code></pre>
-   
+</section>
    <section>
     <h1>CSS Grid Layout</h1>
+    <p>Build a 12-column layout using CSS Grid.</p>
+    <pre><code>
+        .grid {
+            display: grid;
+            width: 100%;
+            grid-template-columns:repeat(12, 1fr);
+        }
+    </code></pre>
+</section>
+<section>
+<h1>Linear Gradients</h1>
+<p>This will create a background linear gradient from top to bottom.</p>
+<code><pre>
+    .linear-gradient-background { background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100%);
+    }
+</pre></code>
+</section>
+<section>
+ <h1>Box Transition Glow</h1>
+ <p>Use transition and box shadows to glow on hover.</p>
+ <code><pre>
+ .code-card .card-header {
+border-radius: 8px;
+transition: all 0.5s ease-in-out;
+ }
 
-
-
-   </section>
-
+ .code-card:hover,
+ .code-card:hover .card-header {box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+</pre></code>
 
 </section>
 
+<section>
+<h1>Overlay Card with Title</h1>
+<p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+<code><pre>
+.card-header {
+    position: relative;
+    margin-top: -20px;
+}
+</pre></code>
 
+</section>
+<footer>
+   <h1>Made with ❤️and CSS</h1>
+ </footer>
 
 
 
