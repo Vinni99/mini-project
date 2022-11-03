@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".assests/style.css">
-    <title>CSS Snippet Cheatsheet</title>
+    <link rel="stylesheet" href="./assests/style.css">
+    <title></title>
 </head>
 <body>
-    <header>
+    <header class="element">
        <h1>CSS Snippet Cheatsheet</h1> 
        <p>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
 </header>
 <main>
-    <section>
+    <section class="row">
         <h1>Flexbox Row</h1>
         <p>Use these three properties to creat a Flexbox row layout.</p>
         <pre><code>
@@ -25,7 +25,7 @@
         </code></pre>
     </section>
 
-<section>
+<section class="column">
   <h1>Flexbox Column</h1>
   <p>Use this to create Flexbox column layout.</p>
    <pre><code>
@@ -35,7 +35,7 @@
     }
    </code></pre>
 </section>
-   <section>
+   <section class="grid">
     <h1>CSS Grid Layout</h1>
     <p>Build a 12-column layout using CSS Grid.</p>
     <pre><code>
@@ -46,15 +46,19 @@
         }
     </code></pre>
 </section>
-<section>
+
+<section class="linear-gradient-background">
 <h1>Linear Gradients</h1>
 <p>This will create a background linear gradient from top to bottom.</p>
+
 <code><pre>
     .linear-gradient-background { background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100%);
     }
+
+
 </pre></code>
 </section>
-<section>
+<section class="code-card">
  <h1>Box Transition Glow</h1>
  <p>Use transition and box shadows to glow on hover.</p>
  <code><pre>
@@ -70,9 +74,10 @@ transition: all 0.5s ease-in-out;
 
 </section>
 
-<section>
+<section class="card-header">
 <h1>Overlay Card with Title</h1>
 <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+
 <code><pre>
 .card-header {
     position: relative;
@@ -81,12 +86,10 @@ transition: all 0.5s ease-in-out;
 </pre></code>
 
 </section>
-<footer>
+</main>
+<footer class="box">
    <h1>Made with ❤️and CSS</h1>
  </footer>
 
-
-
-</main>
 </body>
 </html>

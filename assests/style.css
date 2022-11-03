@@ -1,0 +1,75 @@
+*{
+   box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(173, 241, 218);
+   
+    
+
+}
+
+.element {
+    padding: 50px;
+    text-align: center;
+    
+}
+
+main {
+ display: flex;
+justify-content:space-between;
+padding: 60px;
+flex-wrap: wrap;
+  background: #2a5a87;
+  color: #fff;
+
+}
+
+.row h1 p {
+    float: left;
+     display: flex;
+     flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+
+ main h1 {
+    border-style: dotted;
+  }
+
+  main section {
+    border-style: double;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column
+}
+
+.grid p h1 {
+    display: grid;
+    width: 100%;
+    grid-template-columns:repeat(12, 1fr);
+}
+
+.linear-gradient-background { background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(232, 102, 236, 0.6) 100%);
+ margin-top: 2%;
+ margin-bottom: 2%;
+ 
+}
+
+.code-card  {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    align-self: flex-end;
+     }
+
+     .card-header {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .box {
+      text-align: center;
+    }
